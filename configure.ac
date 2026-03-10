@@ -54,7 +54,7 @@ AC_SUBST(HTML_CHECK_RESULT)
 PKG_CHECK_MODULES(XCBPROTO, xcb-proto >= 1.17.0)
 NEEDED="xau >= 0.99.2"
 case $host_os in
-linux*|darwin*|solaris*|dragonfly*|freebsd*|netbsd*) ;;
+linux*|darwin*|solaris*|dragonfly*|freebsd*|netbsd*|nto*) ;;
      *) NEEDED="$NEEDED pthread-stubs" ;;
 esac
 PKG_CHECK_MODULES(NEEDED, $NEEDED)
